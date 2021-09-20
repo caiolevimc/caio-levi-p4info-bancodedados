@@ -1,2 +1,2 @@
 # Atividades Presença
-Pasta para atividaades que valem presença
+Pasta para atividades que valem presença
