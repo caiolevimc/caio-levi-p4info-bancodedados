@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Caio/Documents/Banco de Dados/caio-levi-p4info-bancodedados/atividade-avaliacao/atividade-avaliacao-03/DB-AVALICAO-02.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure query browser pragmas" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2011"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,13:mainTB_NOTAFISCAL"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="TB_CLIENTE" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="43"/><column index="3" value="72"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="TB_ITEM_NOTAFISCAL" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="57"/><column index="2" value="89"/><column index="3" value="90"/><column index="4" value="52"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="TB_NOTAFISCAL" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="57"/><column index="2" value="44"/><column index="3" value="79"/><column index="4" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO TB_CLIENTE (NOME, ENDERECO)
+VALUES
+	(&quot;José Maria Alves&quot;, &quot;Av João Pessoa 2081&quot;),
+	(&quot;Maria Conceição Tavares&quot;, &quot;Rua Waldery Uchoa 4&quot;),
+	(&quot;João Cosme Fonseca&quot;, &quot;Rua Padre Franscisco Pinto 790&quot;),
+	(&quot;Tiago Cosme Fonseca&quot;, &quot;Rua Padre Franscisco Pinto 790&quot;);
+	
+
+INSERT INTO TB_VENDENDOR (NOME)
+VALUES
+	(&quot;Luciano Arruda Cavalcante&quot;),
+	(&quot;Joana Alves Pessoa&quot;),
+	(&quot;Mercia Bessa Santos&quot;),
+	(&quot;Antonio de Padua Lopes&quot;);
+	
+
+INSERT INTO TB_PRODUTO (CODIGO, NOME, PRECO_UNIT)
+VALUES
+	(100, &quot;Arroz Tio João&quot;, 6.00),
+	(150, &quot;Feijão Carioquinha&quot;, 5.50),
+	(200, &quot;Macarrão Fortaleza&quot;, 3.50),
+	(250, &quot;Oleo de Soja&quot;, 4.00),
+	(300, &quot;Manteiga Betania 500g&quot;, 8.00),
+	(350, &quot;Queijo Ricota Betania&quot;, 7.00);
+	
+
+INSERT INTO TB_NOTAFISCAL (CLIENTE_ID, VENDEDOR_ID, NUM_NF, SERIE)
+VALUES
+	(1, 1, 100, &quot;A&quot;),
+	(3, 2, 101, &quot;A&quot;),
+    (2, 3, 102, &quot;A&quot;),
+    (4, 4, 103, &quot;A&quot;),
+    (2, 1, 104, &quot;A&quot;),
+    (1, 3, 105, &quot;A&quot;),
+    (3, 2, 106, &quot;A&quot;),
+    (4, 4, 107, &quot;A&quot;);
+	
+	
+INSERT INTO TB_ITEM_NOTAFISCAL (NUM_NF, PRODUTO_ID, QUANTIDADE)
+VALUES	
+	(100, 100, 5),
+    (100, 150, 4),
+    (100, 200, 4),
+    (101, 250, 8),
+    (101, 300, 4),
+    (102, 100, 6),
+    (102, 250, 8),
+    (103, 300, 4),
+    (103, 350, 4),
+    (104, 150, 10),
+    (104, 100, 12),
+    (106, 150, 10),
+    (106, 200, 10),
+    (107, 100, 10),
+    (107, 150, 10),
+    (107, 200, 10);</sql><current_tab id="0"/></tab_sql></sqlb_project>
