@@ -1,0 +1,16 @@
+{
+  "name": "atividade-avaliacao-04",
+  "version": "1.0.0",
+  "description": "Script para criar tabelas do banco de dados.",
+  "main": "criar-tabelas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Caio Levi Mendes Costa",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  }
+}
