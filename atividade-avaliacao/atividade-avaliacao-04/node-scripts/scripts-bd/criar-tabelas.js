@@ -29,13 +29,13 @@ db.serialize(() => {
 
     //criando TB_ALUNO_DISCIPLINA
     db.run(`create table if not exists TB_ALUNO_DISCIPLINA(
-        ALUNO_ID integer not null,
-        DISCIPLINA_ID integer not null,
+        TB_ALUNOS_ID integer not null,
+        TB_DISCIPLINAS_ID integer not null,
         NOTA real not null,
         PERIODO integer not null,
-        primary key (ALUNO_ID, DISCIPLINA_ID)
-        foreign key (ALUNO_ID) references TB_ALUNOS(ID)
-        foreign key (DISCIPLINA_ID) references TB_DISCIPLINAS(ID)
+        primary key (TB_ALUNOS_ID, TB_DISCIPLINAS_ID)
+        foreign key (TB_ALUNOS_ID) references TB_ALUNOS(ID)
+        foreign key (TB_DISCIPLINAS_ID) references TB_DISCIPLINAS(ID)
     );`, errorInformer);
 });
 
